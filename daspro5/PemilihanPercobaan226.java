@@ -14,9 +14,42 @@ public class PemilihanPercobaan226 {
         float Tugas = input26.nextFloat();
 
         float total = (UAS * 0.4F) + (UTS * 0.3F) + (Kuis * 0.1F) + (Tugas * 0.2F);
-        String message = total < 65 ? "Remidi " : "Tidak Remidi ";
-        System.out.println("Nilai Akhir = " + total + " Sehingga " + message);
 
+        if (total > 80 && total <= 100) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : A ");
+            System.out.println("Nilai Setara  : 4");
+            System.out.println("Kualifikasi   : SANGAT BAIK ");
+        } else if (total > 73 && total <= 80) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : B+ ");
+            System.out.println("Nilai Setara  : 3.5 ");
+            System.out.println("Kualifikasi   : LEBIH DARI BAIK ");
+        } else if (total > 65 && total <= 73) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : B ");
+            System.out.println("Nilai Setara  : 3 ");
+            System.out.println("Kualifikasi   : BAIK ");
+        } else if (total > 60 && total <= 65) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : C+ ");
+            System.out.println("Nilai Setara  : 2.5 ");
+            System.out.println("Kualifikasi   : LEBIH DARI CUKUP ");
+        } else if (total > 50 && total <= 60) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : C ");
+            System.out.println("Nilai Setara  : 2 ");
+            System.out.println("Kualifikasi   : CUKUP ");
+        } else if (total > 39 && total <= 50) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : D ");
+            System.out.println("Nilai Setara  : 1 ");
+            System.out.println("Kualifikasi   : KURANG ");
+        } else if (total <= 39) {
+            System.out.println("Nilai mutu anda adalah ");
+            System.out.println("Nilai Huruf   : E ");
+            System.out.println("Nilai Setara  : 0 ");
+            System.out.println("Kualifikasi   : GAGAL ");
+        }
     }
-
 }
