@@ -1,3 +1,4 @@
+
 //pemilihan percobaan 1
 
 import java.util.Scanner;
@@ -17,4 +18,5 @@ public class PemilihanPercobaan126 {
         System.out.println("Angka " + angka + "Bilangan Ganjil");
 
     }
+
 }
