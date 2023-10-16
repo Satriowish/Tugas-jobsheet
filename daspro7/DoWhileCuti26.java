@@ -21,6 +21,9 @@ public class DoWhileCuti26 {
                 }
             } else if (konfirmasi.equalsIgnoreCase("n")) {
                 break;
+            } else if (konfirmasi.equalsIgnoreCase("t")) {
+                // Jika pengguna mengetikkan "t", program akan berhenti
+                break;
             }
         } while (true);
     }
