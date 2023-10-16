@@ -2,32 +2,34 @@ import java.util.Scanner;
 
 public class DoWhileCuti26 {
     public static void main(String[] args) {
-        Scanner input10 = new Scanner(System.in);
+        Scanner input26 = new Scanner(System.in);
         int jatahCuti, jumlahHari;
         String konfirmasi;
         System.out.println("Masukkan jatah cuti: ");
-        jatahCuti = input10.nextInt();
+        jatahCuti = input26.nextInt();
         do {
-            System.out.println("Apakah ingin mengambil cuti (y/n)");
-            konfirmasi = input10.next();
+            System.out.println("Apakah inging mengambil cuti (y/n)");
+            konfirmasi = input26.next();
             if (konfirmasi.equalsIgnoreCase("y")) {
-                System.out.println("Masukkan jumlah hari cuti anda: ");
-                jumlahHari = input10.nextInt();
+                System.out.println("Mauskkan jumlah hari cuti anda: ");
+                jumlahHari = input26.nextInt();
                 if (jumlahHari <= jatahCuti) {
                     jatahCuti -= jumlahHari;
-                    System.out.println("Sisa jatah cuti anda: " + jatahCuti);
+                    System.out.println("Sisa jatah cuti anda :" + jatahCuti);
                 } else {
                     System.out.println("Jatah cuti kurang");
+                    System.out.println("Apakah ingin mencoba lagi (y/n)");
+                    konfirmasi = input26.next();
+                    if (!konfirmasi.equalsIgnoreCase("y")) {
+                        break;
+                    }
+
                 }
             } else if (konfirmasi.equalsIgnoreCase("n")) {
                 break;
             } else {
-                System.out.println("jatah cuti kurang");
-                System.out.println("apakah ingin mencoba lagi (y/n) ");
-                if (!konfirmasi.equalsIgnoreCase("y")) {
-                    break;
-                }
+
             }
-        } while (true);
+        } while (jatahCuti > 0);
     }
 }
