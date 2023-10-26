@@ -11,9 +11,11 @@ public class ArrayNilai26 {
             nilaiakhir[i] = input26.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai Akhir Ke-" + i + " Adalah " + nilaiakhir[i]);
+        for (int i = 0; i < nilaiakhir.length; i++) {
+            if (nilaiakhir[i] > 70) {
+                System.out.println("Mahasiswa Ke-" + i + " LULUS!");
 
+            }
         }
     }
 }
