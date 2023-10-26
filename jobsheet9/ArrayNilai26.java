@@ -11,10 +11,12 @@ public class ArrayNilai26 {
             nilaiakhir[i] = input26.nextInt();
         }
 
+        System.out.println("Status Kelulusan Mahasiswa:");
         for (int i = 0; i < nilaiakhir.length; i++) {
             if (nilaiakhir[i] > 70) {
                 System.out.println("Mahasiswa Ke-" + i + " LULUS!");
-
+            } else {
+                System.out.println("Mahasiswa Ke-" + i + " TIDAK LULUS!");
             }
         }
     }
